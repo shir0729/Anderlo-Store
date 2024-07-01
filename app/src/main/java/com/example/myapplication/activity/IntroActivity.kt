@@ -2,12 +2,6 @@ package com.example.myapplication.activity
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.example.myapplication.MainActivity
-import com.example.myapplication.R
 import com.example.myapplication.databinding.ActivityIntroBinding
 
 class IntroActivity : BaseActivity() {
@@ -18,7 +12,7 @@ class IntroActivity : BaseActivity() {
         setContentView(binding.root)
 
         binding.startButton.setOnClickListener {
-            startActivity(Intent(this@IntroActivity,MainActivity::class.java))
+            startActivity(Intent(this@IntroActivity, MainActivity::class.java))
         }
 
     }
