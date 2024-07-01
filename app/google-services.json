@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1073320075375",
+    "project_id": "anderlo-store",
+    "storage_bucket": "anderlo-store.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073320075375:android:84e8a79584cb7efef4ad9a",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxp6vmUgBWEzro3mlQ12WD6TCsG_jWc6A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
