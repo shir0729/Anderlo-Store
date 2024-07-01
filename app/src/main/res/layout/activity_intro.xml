@@ -50,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="32dp"
 
-                android:background="@drawable/purple_button_bg"
+                android:background="@drawable/purple_bg"
                 android:text="Let's Get Started"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
