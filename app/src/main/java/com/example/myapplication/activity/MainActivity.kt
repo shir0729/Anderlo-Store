@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
 import com.example.myapplication.Adapter.BrandAdapter
+import com.example.myapplication.Adapter.PopularAdapter
 import com.example.myapplication.Model.SliderModel
 import com.example.myapplication.Adapter.SliderAdapter
 import com.example.myapplication.ViewModel.MainViewModel
@@ -25,6 +26,7 @@ class MainActivity : BaseActivity() {
 
         initBanner()
         initBrand()
+        initPopular()
     }
 
     private fun initBanner() {
@@ -67,9 +69,9 @@ class MainActivity : BaseActivity() {
         binding.progressBarPopular.visibility=View.VISIBLE
         viewModel.popular.observe(this,Observer {
             binding.viewPopular.layoutManager =GridLayoutManager(this@MainActivity,2)
-            binding.viewPopular.adapter = BrandAdapter(it)
+            binding.viewPopular.adapter = PopularAdapter(it)
             binding.progressBarPopular.visibility = View.GONE
         })
-        viewModel.loadBrand()
+        viewModel.loadPupolar()
     }
 }
