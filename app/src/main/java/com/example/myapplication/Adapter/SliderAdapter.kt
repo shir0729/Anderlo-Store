@@ -1,6 +1,5 @@
-package com.example.myapplication
+package com.example.myapplication.Adapter
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,6 +10,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CenterInside
 import com.bumptech.glide.request.RequestOptions
 import com.example.myapplication.Model.SliderModel
+import com.example.myapplication.R
 
 class SliderAdapter(
     private var sliderItems: List<SliderModel>,
