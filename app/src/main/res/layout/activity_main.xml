@@ -95,17 +95,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:visibility="visible"
+                    android:visibility="gone"
                     app:dotsColor="@color/lightGrey"
                     app:dotsCornerRadius="8dp"
                     app:dotsSize="6dp"
                     app:dotsSpacing="2dp"
                     app:dotsWidthFactor="2.5"
-                    app:layout_constraintBottom_toBottomOf="@+id/viewPageSlider"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/viewPageSlider"
-                    app:selectedDotColor="@color/purple" />
+                    app:selectedDotColor="@color/purple"
+                    tools:visibility="visible"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
