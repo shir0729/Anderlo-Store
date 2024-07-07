@@ -1,6 +1,6 @@
 package com.example.myapplication.Model
 
-data class ItemModel(
+data class ItemsModel(
     var title: String ="",
     var description: String ="",
     var picUrl: ArrayList<String> = ArrayList(),
