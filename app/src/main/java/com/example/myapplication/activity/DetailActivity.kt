@@ -1,35 +1,28 @@
 package com.example.myapplication.activity
 
+import ColorAdapter
 import android.os.Bundle
 import android.view.View
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.example.myapplication.Adapter.ColorAdapter
 import com.example.myapplication.Adapter.SizeAdapter
 import com.example.myapplication.Adapter.SliderAdapter
 import com.example.myapplication.Model.ItemsModel
 import com.example.myapplication.Model.SliderModel
-import com.example.myapplication.R
 import com.example.myapplication.databinding.ActivityDetailBinding
-import com.example.project1762.Helper.ManagmentCart
-import com.google.android.material.slider.Slider
+import com.example.project1762.Helper.ManagementCart
 
 class DetailActivity : BaseActivity() {
 
     private lateinit var binding:ActivityDetailBinding
     private lateinit var item:ItemsModel
     private var numberOder=1
-    private lateinit var managmentCart: ManagmentCart
+    private lateinit var managmentCart: ManagementCart
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        managmentCart= ManagmentCart(this)
+        managmentCart= ManagementCart(this)
 
         getBundle()
         banners()

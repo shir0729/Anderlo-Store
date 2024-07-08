@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".activity.DetailActivity">
 
     <ScrollView
@@ -14,7 +15,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -49,13 +50,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="290dp"
                 android:layout_margin="16dp"
-                android:padding="16dp"
-                android:background="@drawable/grey_bg"/>
+                android:background="@drawable/grey_bg"
+                android:padding="16dp" />
 
             <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
                 android:id="@+id/dotIndicator"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginTop="4dp"
                 android:visibility="gone"
                 app:dotsColor="@color/lightGrey"
@@ -63,9 +65,8 @@
                 app:dotsSize="6dp"
                 app:dotsSpacing="2dp"
                 app:dotsWidthFactor="2.5"
-                android:layout_gravity="center"
                 app:selectedDotColor="@color/purple"
-                tools:visibility="visible"/>
+                tools:visibility="visible" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/colorList"
@@ -74,15 +75,13 @@
                 android:layout_marginTop="16dp"
                 android:clipToPadding="false"
                 android:paddingStart="8dp"
-                android:paddingEnd="8dp"
-                />
+                android:paddingEnd="8dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
                 android:layout_margin="16dp"
-                >
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/titleTxt"
@@ -90,27 +89,26 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="title"
-                    android:textStyle="bold"
                     android:textColor="@color/black"
                     android:textSize="23sp"
-                    />
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/priceTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="$0"
-                    android:textSize="22sp"
-                    android:textStyle="bold"
                     android:textColor="@color/black"
-                    />
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginEnd="16dp"
-                android:layout_marginTop="16dp"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -134,8 +132,8 @@
                     android:id="@+id/ratingTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:text="5"/>
+                    android:text="5"
+                    android:textColor="@color/black" />
 
             </LinearLayout>
 
@@ -153,11 +151,10 @@
                 android:id="@+id/descriptionTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView"
                 android:layout_margin="16dp"
+                android:text="TextView"
 
                 />
-
 
 
             <LinearLayout
@@ -167,28 +164,27 @@
                 android:orientation="horizontal">
 
 
-
                 <androidx.appcompat.widget.AppCompatButton
-                    style="@android:style/Widget.Button"
                     android:id="@+id/addToCarBtn"
-                    android:textColor="@color/white"
-                    android:textSize="18sp"
+                    style="@android:style/Widget.Button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:layout_margin="8dp"
+                    android:layout_weight="1"
                     android:background="@drawable/purple_bg"
-                    android:text="Buy Now" />
+                    android:text="Buy Now"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
 
 
                 <ImageButton
                     android:id="@+id/cartBtn"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:background="@drawable/grey_bg"
                     android:layout_margin="8dp"
+                    android:background="@drawable/grey_bg"
                     app:srcCompat="@drawable/btn_2"
-                    app:tint="@color/black"/>
+                    app:tint="@color/black" />
             </LinearLayout>
 
         </LinearLayout>
