@@ -3,4 +3,18 @@
     <string name="intro_title">Step into your <font color="6033ba"> style\nA world of shoes</font></string>
     <string name="intro_text">Browse the latest style from top brands\nGet personalized recommendations\nEnjoy fast, free shipping</string>
     <string name="intro_signin">Already have an account? <font color="6033ba">Sign In</font></string>
+    <string name="s">S/</string>
+    <string name="_5">5</string>
+    <string name="title">title</string>
+    <string name="check_out">Check Out</string>
+    <string name="s_0">S/0</string>
+    <string name="mas">+</string>
+    <string name="menos">-</string>
+    <string name="cero">0</string>
+    <string name="total">Total</string>
+    <string name="total_tax">Total Tax</string>
+    <string name="free_delivery">Free Delivery</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="my_cart">My cart</string>
+    <string name="your_cart_is_empty">Your Cart is Empty</string>
 </resources>

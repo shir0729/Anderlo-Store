@@ -1,5 +1,6 @@
 package com.example.myapplication.Adapter
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
@@ -26,9 +27,10 @@ class PopularAdapter(val items:MutableList<ItemsModel>):
             return ViewHolder(binding)
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: PopularAdapter.ViewHolder, position: Int) {
         holder.binding.titleTxt.text=items[position].title
-        holder.binding.priceTxt.text="$"+items[position].price.toString()
+        holder.binding.priceTxt.text="S/"+items[position].price.toString()
         holder.binding.ratingTxt.text=items[position].rating.toString()
 
         val requestOptions=RequestOptions().transform(CenterCrop())

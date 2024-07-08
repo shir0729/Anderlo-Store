@@ -63,7 +63,7 @@ class MainViewModel : ViewModel() {
 
         })
     }
-    fun loadPupolar(){
+    fun loadPopular(){
         val Ref = firebaseDatabase.getReference("Items")
         Ref.addValueEventListener(object : ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
